@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Security-Policy">
+	<title>Resume</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animations.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+</head>
+<style type="text/css">
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  	position: relative;
+  	max-width: 1200px;
+  	margin: 0 auto;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  	content: '';
+  	position: absolute;
+  	width: 6px;
+  	background-color: white;
+  	top: 0;
+  	bottom: 0;
+  	left: 50%;
+	margin-left: -3px;
+	background-color: #474e5d;
+}
+/* Container around content */
+.container123 {
+  	padding: 10px 40px;
+  	position: relative;
+  	background-color: inherit;
+  	width: 50%;
+}
+/* The circles on the timeline */
+.container123::after {
+  	content: '';
+ 	position: absolute;
+ 	width: 25px;
+ 	height: 25px;
+  	right: -17px;
+  	background-color: white;
+  	border: 4px solid #FF9F55;
+  	top: 15px;
+  	border-radius: 50%;
+  	z-index: 1;
+}
+/* Place the container to the left */
+.left {
+  	left: 0;
+}
+/* Place the container to the right */
+.right {
+  	left: 50%;
+}
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  	content: " ";
+  	height: 0;
+  	position: absolute;
+  	top: 22px;
+  	width: 0;
+  	z-index: 1;
+  	right: 30px;
+  	border: medium solid #474e5d;
+  	border-width: 10px 0 10px 10px;
+  	border-color: transparent transparent transparent #474e5d;
+}
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  	content: " ";
+  	height: 0;
+  	position: absolute;
+  	top: 22px;
+  	width: 0;
+  	z-index: 1;
+  	left: 30px;
+  	border: medium solid #474e5d;
+  	border-width: 10px 10px 10px 0;
+  	border-color: transparent #474e5d transparent transparent;
+}
+/* Fix the circle for containers on the right side */
+.right::after {
+  	left: -16px;
+}
+/* The actual content */
+.content {
+  	padding: 20px 30px;
+  	background-color: white;
+  	position: relative;
+  	border-radius: 6px;
+   	background-color: #474e5d;
+}
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+	.timeline::after {
+	    left: 31px;
+	}
+
+	/* Full-width containers */
+	.container123 {
+	    width: 100%;
+	    padding-left: 70px;
+	    padding-right: 25px;
+	}
+
+	/* Make sure that all arrows are pointing leftwards */
+	.container123::before {
+	    left: 60px;
+	    border: medium solid white;
+	    border-width: 10px 10px 10px 0;
+	    border-color: transparent white transparent transparent;
+	}
+	/* Make sure all circles are at the same spot */
+	.left::after, .right::after {
+	    left: 15px;
+	}
+
+	/* Make all right containers behave like the left ones */
+	.right {
+	    left: 0%;
+	  }
+}
+</style>
+<body>
+<div style="border-radius: 2px;background: #fff;box-shadow: 0 5px 10px rgba(0,0,0,.2);box-sizing: border-box;width: 262.5mm;padding: 11.25mm;max-width: 100%;margin: 0 auto;margin-top:20px;">
+    <div style="max-width: 970px;margin: 0;color: #000;">
+		<div class="row" style="border-style: double;padding: 20px">
+			<div class="col-sm-12" style="text-align: center;">
+		  		<img src="images/bg05.png" class="rounded-circle" style="padding: 10px">
+				<h1 style="font-size: 22px;font-family: 'Fredericka the Great', cursive;">陳 媛 媛 Chen-Yuan-Yuan</h1>
+				<i class="fa fa-location-arrow" style="font-size:15px">  Taipei，Taiwan</i>
+				<br>
+				<i class="fa fa-github" style="font-size:15px"> yuanyuan1103</i>
+				<br>
+				<i class="fa fa-whatsapp" style="font-size:15px">  0979-091103</i>
+				<br>
+				<i class="fa fa-envelope-o" style="font-size:15px">  pijhs70401@gmail.com</i>
+			</div>
+		</div>
+
+		<br>
+
+		<div class="row" style="border-top: 1px solid;border-bottom: 1px solid;border-color: #9d9d9d;">
+	    	<div class="col-sm-12" style="text-align: center;font-family: 'Amatic SC', cursive;">    	   
+	    		<h2>簡介  Introduction</h2>
+			</div>
+		</div>
+		<p style="text-align: center;padding: 20px">
+			畢業於文化大學資工系，由於在大四下的實習裡，開始接觸網頁切版的工作，漸漸對這方面開始有興趣。
+		</p>
+
+		<br>
+
+		<div class="row" style="border-top: 1px solid;border-bottom: 1px solid;order-color: #9d9d9d;">
+			<div class="col-sm-12" style="text-align: center;font-family: 'Amatic SC', cursive;">    	   
+				<h2>技能  Skill</h2>
+			</div>
+		</div>
+
+		<div class="row wow fadeIn">
+			<div class="col-sm">
+  				<h1 style="text-align: center;font-family: 'Fredericka the Great', cursive;">Programming</h1>
+	  			<ul>
+	  				<li>Frontend</li>
+						<ul class="fa-ul">
+							<li><i class="fa-li fa fa-spinner fa-spin"></i>HTML5</li>
+							<li><i class="fa-li fa fa-spinner fa-spin"></i>CSS3</li>
+							<li><i class="fa-li fa fa-spinner fa-spin"></i>Bootstrap</li>
+						</ul>
+					<li>Backend</li>
+						<ul class="fa-ul">
+							<li><i class="fa-li fa fa-spinner fa-spin"></i>MySQL</li>
+							<li><i class="fa-li fa fa-spinner fa-spin"></i>JSP</li>
+						</ul>
+				</ul>
+			</div>
+
+			<div class="col-sm">
+			  	<h1 style="text-align: center;font-family: 'Fredericka the Great', cursive;">
+			  		Visual Design
+			  	</h1>
+				<ul class="fa-ul">
+					<li><i class="fa-li fa fa-spinner fa-spin"></i>Photoshop</li>
+					<li><i class="fa-li fa fa-spinner fa-spin"></i>Blender</li>
+				</ul>
+			</div>
+
+			<div class="col-sm">
+			  	<h1 style="text-align: center;font-family: 'Fredericka the Great', cursive;">
+			  		Others
+			  	</h1>
+				<ul class="fa-ul">
+					<li><i class="fa-li fa fa-spinner fa-spin"></i>Word</li>
+					<li><i class="fa-li fa fa-spinner fa-spin"></i>Excel</li>
+					<li><i class="fa-li fa fa-spinner fa-spin"></i>PowerPoint</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row" style="border-top: 1px solid;border-bottom: 1px solid;border-color: #9d9d9d;">
+		    <div class="col-sm-12" style="text-align: center;font-family: 'Amatic SC', cursive;">    	   
+		    	<h2>經歷 Experience</h2>
+			</div>
+		</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="timeline">
+				<div class="container123 left">
+					<div class="content">
+						<h3 style="color: #fff">2018 年 6 月 畢業</h3>
+						<p style="color:#fff">社團經歷</p>  
+							<div style="color:#fff">
+								<ul>
+									<li>吉他社</li>
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-spinner fa-spin"></i>統整人事資料</li>
+											<li><i class="fa-li fa fa-spinner fa-spin"></i>編寫回饋量表</li>
+											<li><i class="fa-li fa fa-spinner fa-spin"></i>整理開會資料</li>
+										</ul>
+		  								<li>班畢冊編輯</li>
+											<ul class="fa-ul">
+												<li><i class="fa-li fa fa-spinner fa-spin"></i>設計班冊</li>
+										</ul>
+		  						</ul>
+	      					</div>
+	    				</div>
+	  				</div>
+
+				<div class="container123 right" style="color:#fff">
+	    			<div class="content">
+	      				<h2> 2018.01 - 2018.09</h2>
+	      				<p>詎詮科技實習生</p>
+						<ul class="fa-ul">
+							<li><i class="fa-li fa fa-spinner fa-spin"></i>網頁切版</li>
+						</ul>
+						<p>在大約9個月的實習期間，學習如何將客戶給的平面圖，轉換成靜態網頁，學習到如何跟後端工程師討論問題的重要性，學習如何切手機畫面的版型，目前動態網頁的部分是正在努力學習的地方。</p>
+	    			</div>
+	  			</div>
+			</div>
+		</div>
+	</div>  
+
+	<div class="row" style="border-top: 1px solid;
+	    border-bottom: 1px solid;
+	    border-color: #9d9d9d;">
+	    <div class="col-sm-12" style="text-align: center;font-family: 'Amatic SC', cursive;">    	   
+	    	<h2>前端經歷  Front-end Experience</h2>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6" style="text-align: left;padding:30px">
+			<h2>今生麗活</h2>
+			<br>
+			簡介：
+			<br>
+			負責切網頁前臺的版型
+			<br>
+			使用技術：HTML、Bootstrap、CSS、客製樣式、第三方套件（Swiper.js）	
+		</div>
+
+		<div class="col-sm-6" style="padding: 30px">
+			<div class="row" style="text-align: center;">
+				<div class="col-sm-4">
+					<img style="width: 100%;" src="images/1.jpg">首頁
+				</div>
+				<div class="col-sm-4">
+					<img style="width: 100%;" src="images/3.jpg">羅盤畫面
+				</div>
+				<div class="col-sm-4">
+					<img style="width: 100%;" src="images/4.jpg">登出框
+				</div>
+				<div class="col-sm-4">
+					<img style="width: 100%;" src="images/5.jpg">登入畫面
+				</div>
+				<div class="col-sm-4">
+					<img style="width: 100%;" src="images/6.jpg">個人設置
+				</div>
+				<div class="col-sm-4">
+					<img style="width: 100%;" src="images/7.jpg">修改資料
+				</div>
+			</div>
+		</div>  
+
+		<div class="row">
+			<div class="col-sm-6" style="padding: 30px;text-align: center;">
+			<div class="row" style="text-align: center;">
+
+				<div class="col-sm-6">
+					<img style="width: 100%;" src="images/8.jpg">
+				</div>
+				<div class="col-sm-6">
+					<img style="width: 100%;" src="images/9.jpg">
+				</div>
+				<div class="col-sm-6">
+					<img style="width: 100%;" src="images/10.jpg">
+				</div>
+				<div class="col-sm-6">
+					<img style="width: 100%;" src="images/11.jpg">
+				</div>
+			</div>
+		</div>  
+			
+			<div class="col-sm-6" style="text-align: left;padding:30px">
+				<h2>Natural Living</h2>
+				<br>
+				簡介：
+				<br>
+				負責切網頁前臺的版型
+				<br>
+				使用技術：HTML、CSS、Bootstrap、客製樣式、第三方套件（Swiper.js）
+			</div>
+		</div>  
+</div>
+
+	</div>
+
+</div>
+
+</body>
+<script>
+	new WOW().init();	
+</script>
+
+</html>

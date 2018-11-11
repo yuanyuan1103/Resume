@@ -1,0 +1,66 @@
+
+/*==========隱藏時間軸==========*/
+#bottom_line,
+.bottom_start,
+#time_show{
+   background: none;
+   color: rgba(0,0,0,0);}
+
+/*==========時間軸細線==========*/
+#bottom_line{
+  /*顏色*/
+  background: red;
+  /*隱藏*/
+  background: none;
+  /*粗度*/
+  height: 5px;
+  margin-bottom: 0px;/* (-1)*(粗度/2 - 1) 　px(記得單位哦)*/
+  /*改成圖片*/
+  height: 30px;/*圖片高度*/
+  margin-bottom: 0px;/* (-1)*(圖片高度/2 - 1) 　px(記得單位哦)*/
+  background-image: url('http://www.thhs.ntpc.edu.tw/office/people/images/分隔線/line017.gif');
+  background-repeat: repeat;/*圖片是否重複*/
+  background-color: rgba(0,0,0,0);/*背景底色(圖片有去背時露出來的部分)*/
+}
+
+/*==========各噗對應的時間方塊==========*/
+/*完全隱藏*/
+.bottom_start,
+#time_show{
+   background: none;
+   color: rgba(0,0,0,0);}
+/*平常隱藏，滑鼠移到噗上、點開時顯示*/
+.bottom_start{
+   background: none;
+   color: rgba(0,0,0,0);}
+/*平常*/
+.bottom_start{
+   /*底色*/
+   background: green;
+   /*字色*/
+   color: purple;
+   /*標籤圓角*/
+   /*一起設和分開設只要用其中一組就好了哦*/
+   /*四角一起設定*/
+   border-radius: 15px;
+   /*四腳分開設定*/
+   border-top-left-radius: 0px;/*左上角*/
+   border-top-right-radius: 0px;/*右上角*/
+   border-bottom-left-radius: 0px;/*左下角*/
+   border-bottom-right-radius: 0px;/*右下角*/}
+/*滑鼠移到噗上、點開時*/
+#time_show{
+   /*底色*/
+   background: green;
+   /*字色*/
+   color: purple;
+   /*標籤圓角*/
+   /*一起設和分開設只要用其中一組就好了哦*/
+   /*四角一起設定*/
+   border-radius: 15px;
+   /*四腳分開設定*/
+   border-top-left-radius: 0px;/*左上角*/
+   border-top-right-radius: 0px;/*右上角*/
+   border-bottom-left-radius: 0px;/*左下角*/
+   border-bottom-right-radius: 0px;/*右下角*/
+}
